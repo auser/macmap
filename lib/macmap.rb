@@ -7,7 +7,7 @@ module Macmap
 
     out = {}
     str.split("\n").each do |line|
-      if m = line.match(regexes[:new_iface])#/^\S+ \((\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\) at ([a-fA-F0-9\:]+) on ([a-zA-Z0-9\.\:\-]+) \[(\w+)\]/
+      if m = line.match(regexes[:new_iface])
         @current_interface = m.to_s.gsub(/:/, "")
       end
       if @current_interface
