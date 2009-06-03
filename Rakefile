@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "macmap"
-    gem.summary = %Q{TODO}
+    gem.summary = open(File.dirname(__FILE__) + "/README.rdoc").read
     gem.email = "arilerner@mac.com"
     gem.homepage = "http://github.com/auser/macmap"
     gem.authors = ["Ari Lerner"]
