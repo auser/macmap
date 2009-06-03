@@ -8,7 +8,7 @@ Alas, Macmap is here to help!
 
 Usage is easy:
 
-  Macmap.map_iface_to_ip %{ifconfig -a}
+  Macmap.map_iface_to_ip %x{ifconfig -a}
 
 Or
   
